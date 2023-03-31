@@ -19,5 +19,6 @@
     "sample"
   ],
   "author": "Soujanya Kirni",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }
