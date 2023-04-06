@@ -3,13 +3,16 @@ extends layout
 block content
     h1= title
     - let results=[{gamename:"Cricket", playername: "Virat Kohli", score:100}, {gamename:"Tennis", playername: "Manika Batra", score:20},{gamename:"Badminton", playername: "Saina Nehwal", score:10}]
+    br
     div.container-fliud
         div.row
             each item,ind in results 
                 div(class='col-sm-2' onclick=`buy(${ind})`) 
-                    p Name  is #{item.gamename}
-                    p Age  is #{item.playername}
-                    p score: #{item.score}
+                    p Game Name : #{item.gamename}
+                    p Player : #{item.playername}
+                    p Score : #{item.score}
+    br
+    
     each ite,index in results
         p value at index #{index} is : #{ite.gamename},#{ite.playername},#{ite.score}
     script. 
