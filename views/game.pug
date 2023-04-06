@@ -2,7 +2,7 @@ extends layout
 
 block content
     h1= title
-    - let results=[{gamename:"Cricket", playername: "Virat Kohli", score:100}, {gamename:"Tennis", playername: "Manika Batra", score:20},{gamename:"Badminton", playername: "Saina Nehwal", score:10}]
+    - let results=[{gamename:"Cricket", playername: "Virat Kohli", score:100}, {gamename:"Tennis", playername: "Manika Batra", score:20},{gamename:"Badminton", playername: "Saina Nehwal", score:10},{gamename:"Throwball", playername: "Rahul", score:100},{gamename:"baseball", playername: "Munna", score:40}]
     br
     div.container-fliud
         div.row
@@ -13,8 +13,7 @@ block content
                     p Score : #{item.score}
     br
     
-    each ite,index in results
-        p value at index #{index} is : #{ite.gamename},#{ite.playername},#{ite.score}
+    
     script. 
         function buy(i){
             alert("You purchased item "+(i+1))
